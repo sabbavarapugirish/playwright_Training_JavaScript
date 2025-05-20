@@ -56,7 +56,7 @@ test("tizag", async ({ page }) => {
 });
 
 //echoecho
-test.only("echoecho", async ({ page }) => {
+test("echoecho", async ({ page }) => {
   await page.goto("http://www.echoecho.com/htmlforms10.htm");
   const title = await page.title();
   console.log("title is  : ", title);

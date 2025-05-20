@@ -1,0 +1,144 @@
+# Test info
+
+- Name: Login functionality of the practice website by using the locators
+- Location: C:\Users\sabbavarapu.kumar\PlaywrightExample\tests\PracticeTestCases\CaseStudy.spec.js:2:5
+
+# Error details
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://practice.expandtesting.com/login", waiting until "load"
+
+    at C:\Users\sabbavarapu.kumar\PlaywrightExample\tests\PracticeTestCases\CaseStudy.spec.js:3:16
+```
+
+# Page snapshot
+
+```yaml
+- paragraph:
+  - link "TestifyStack":
+    - /url: https://testifystack.com/
+  - text: "| Email, SMS, OTP and Webhooks Testing Stack for QA & Dev"
+- banner:
+  - navigation "Main navigation":
+    - link "SUT":
+      - /url: /
+      - 'img "Best Website for Practice Automation Testing: Free UI and REST API Examples and Apps. Using Cypress, Playwright, Selenium, WebdriverIO and Postman."'
+      - text: Practice
+    - list:
+      - listitem:
+        - button "Demos"
+      - listitem:
+        - link "Tools":
+          - /url: /#tools
+      - listitem:
+        - link "Tips":
+          - /url: /tips
+      - listitem:
+        - link "Test Cases":
+          - /url: /test-cases
+      - listitem:
+        - link "API Testing":
+          - /url: /notes/api/api-docs/
+      - listitem:
+        - link "About":
+          - /url: /about
+    - list
+    - link "Free ISTQB Mock Exams":
+      - /url: https://istqb.expandtesting.com/
+- main:
+  - insertion
+  - paragraph:
+    - text: Do you enjoy this platform? ❤️
+    - link "Buy us a coffee":
+      - /url: https://www.buymeacoffee.com/expandtesting
+  - insertion
+  - navigation "breadcrumb mb-2":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+      - listitem: / Login Page
+  - heading "Test Login page for Automation Testing Practice" [level=1]
+  - paragraph: This Test Login page is designed for automation testing practice. Test various positive and negative login scenarios in a testing environment.
+  - paragraph: You can use this login page for practicing with Selenium or other tools like Playwright, Cypress, etc.
+  - paragraph:
+    - text: Register
+    - link "here":
+      - /url: /register
+    - text: "or Log in to the secure area with these credentials:"
+  - list:
+    - listitem: "Username: practice"
+    - listitem: "Password: SuperSecretPassword!"
+  - paragraph
+  - text: Username
+  - textbox "Username"
+  - text: Password
+  - textbox "Password"
+  - button "Login"
+  - heading "How to test the login page?" [level=2]
+  - paragraph: If the credentials are correct, you should see a welcome message; otherwise, you will see an error message.
+  - paragraph: The login feature is essential for secure websites and is commonly used. Automating the testing of various login scenarios, including different edge cases, is crucial to ensure reliability and security.
+  - heading "How Does Form-Based Authentication Work?" [level=3]
+  - paragraph: "Take a look at this diagram and review the different steps:"
+  - img "How Does Form-Based Authentication Work"
+  - list:
+    - listitem: "Step 1: A client requests access to a protected resource"
+    - listitem: "Step 2: If the client is unauthenticated, the server redirects the client to a login page"
+    - listitem: "Step 3: The client submits the login form to the server"
+    - listitem: "Step 4: If the login succeeds, the server redirects the client to the resource. If the login fails, the client is redirected to an error page"
+  - insertion
+- contentinfo:
+  - heading "Practice Test Automation WebSite for Web UI and Rest API" [level=4]
+  - paragraph:
+    - text: "Version: 41a43bee | Copyright"
+    - link "Expand Testing":
+      - /url: https://expandtesting.com/
+    - text: "2025"
+- img
+```
+
+# Test source
+
+```ts
+   1 | import {expect,test} from '@playwright/test'
+   2 | test('Login functionality of the practice website by using the locators',async({page})=>{
+>  3 |     await page.goto("https://practice.expandtesting.com/login");
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+   4 |     //title
+   5 |     const PAGEtitle=await page.title();
+   6 |     //url
+   7 |     const url=await page.url();
+   8 |     console.log('url is :',url);
+   9 |     console.log('title is :',PAGEtitle);
+  10 |     await expect(page).toHaveURL(url)
+  11 |     await expect(page).toHaveTitle(PAGEtitle);
+  12 |     //username
+  13 |     await page.locator("//input[@id='username']").fill("practice");
+  14 |     //password
+  15 |     await page.locator("//input[@id='password']").fill("SuperSecretPassword!")
+  16 |     //log in button
+  17 |     await page.locator("//button[normalize-space()='Login']").click();
+  18 |
+  19 | })
+  20 |
+  21 | test('Login functionality of the automation website by using the locators',async({page})=>{
+  22 |     await page.goto("https://practicetestautomation.com/practice-test-login");
+  23 |     //title
+  24 |     const PAGEtitle=await page.title();
+  25 |     //url
+  26 |     const url=await page.url();
+  27 |     console.log('url is :',url);
+  28 |     console.log('title is :',PAGEtitle);
+  29 |     await expect(page).toHaveURL(url)
+  30 |     await expect(page).toHaveTitle(PAGEtitle);
+  31 |     //username
+  32 |     await page.locator("//input[@id='username']").fill("student");
+  33 |     //password
+  34 |     await page.locator("//input[@id='password']").fill("Password123")
+  35 |     //Submit button
+  36 |     await page.locator("//input[@id='password']").click();
+  37 |
+  38 | })
+```

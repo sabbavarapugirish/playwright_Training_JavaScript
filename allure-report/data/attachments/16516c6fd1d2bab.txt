@@ -1,0 +1,2 @@
+url is : https://practice.expandtesting.com/login
+title is : Test Login Page for Automation Testing Practice

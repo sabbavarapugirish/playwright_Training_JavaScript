@@ -1,0 +1,406 @@
+# Test info
+
+- Name: Register Ebay Website
+- Location: C:\Users\sabbavarapu.kumar\PlaywrightExample\tests\Locators\BuildInLocators1.spec.js:2:5
+
+# Error details
+
+```
+Error: expect.toBeVisible: Error: strict mode violation: getByAltText('') resolved to 23 elements:
+    1) <img alt="" data-vl-atf="1" role="presentation" data-load-time="1747739938277" src="https://i.ebayimg.com/images/g/ricAAOSwn3dnyHtZ/s-l1600.webp"/> aka getByRole('listitem').filter({ hasText: 'Returns made simpleNot happy' }).locator('img')
+    2) <img data-size="290" alt="Home and Garden" crossorigin="anonymous" src="https://i.ebayimg.com/images/g/apEAAOSwVN1n4r~-/s-l300.webp" data-src="https://i.ebayimg.com/images/g/apEAAOSwVN1n4r~-/s-l300.webp"/> aka locator('.vl-banner-multi-cta__image-link').first()
+    3) <img alt="Fashion" data-size="290" crossorigin="anonymous" src="https://i.ebayimg.com/images/g/Pr8AAOSw4E5n4sAC/s-l300.webp" data-src="https://i.ebayimg.com/images/g/Pr8AAOSw4E5n4sAC/s-l300.webp"/> aka locator('div:nth-child(3) > .vl-banner-multi-cta__image-link').first()
+    4) <img data-size="290" crossorigin="anonymous" alt="Business & Industrial" src="https://i.ebayimg.com/images/g/kUgAAOSwPedn4sAG/s-l300.webp" data-src="https://i.ebayimg.com/images/g/kUgAAOSwPedn4sAG/s-l300.webp"/> aka locator('div:nth-child(5) > .vl-banner-multi-cta__image-link').first()
+    5) <img alt="Home and Garden" src="https://i.ebayimg.com/images/g/apEAAOSwVN1n4r~-/s-l300.webp"/> aka locator('[id="s0-1-0-53-1-2-5-15-0\\[0\\]-2-\\@match-media-0-\\@ebay-carousel-4\\[\\@1\\]-3\\[1\\]-1-0-19-9-\\@match-media-0-\\@ebay-carousel-list"]').getByAltText('Home and Garden')
+    6) <img alt="Fashion" src="https://i.ebayimg.com/images/g/Pr8AAOSw4E5n4sAC/s-l300.webp"/> aka locator('[id="s0-1-0-53-1-2-5-15-0\\[0\\]-2-\\@match-media-0-\\@ebay-carousel-4\\[\\@1\\]-3\\[1\\]-1-0-19-9-\\@match-media-0-\\@ebay-carousel-list"]').getByAltText('Fashion')
+    7) <img alt="Business & Industrial" src="https://i.ebayimg.com/images/g/kUgAAOSwPedn4sAG/s-l300.webp"/> aka locator('[id="s0-1-0-53-1-2-5-15-0\\[0\\]-2-\\@match-media-0-\\@ebay-carousel-4\\[\\@1\\]-3\\[1\\]-1-0-19-9-\\@match-media-0-\\@ebay-carousel-list"]').getByAltText('Business & Industrial')
+    8) <img alt="Motors" data-size="290" crossorigin="anonymous" src="https://i.ebayimg.com/images/g/tgUAAOSwkKJnycJx/s-l300.webp" data-src="https://i.ebayimg.com/images/g/tgUAAOSwkKJnycJx/s-l300.webp"/> aka locator('li:nth-child(3) > .tracking-wrapper > .vl-banner > .vl-banner-color-block__container > .page-grid > .vl-banner-multi-cta__main-container > div > .vl-banner-multi-cta__image-link').first()
+    9) <img data-size="290" alt="Electronics" crossorigin="anonymous" src="https://i.ebayimg.com/images/g/ZC8AAOSwU8dnycJ2/s-l300.webp" data-src="https://i.ebayimg.com/images/g/ZC8AAOSwU8dnycJ2/s-l300.webp"/> aka locator('li:nth-child(3) > .tracking-wrapper > .vl-banner > .vl-banner-color-block__container > .page-grid > .vl-banner-multi-cta__main-container > div:nth-child(3) > .vl-banner-multi-cta__image-link')
+    10) <img data-size="290" crossorigin="anonymous" alt="Collectibles and Art" src="https://i.ebayimg.com/images/g/YkcAAOSwd0FnycJ4/s-l300.webp" data-src="https://i.ebayimg.com/images/g/YkcAAOSwd0FnycJ4/s-l300.webp"/> aka locator('li:nth-child(3) > .tracking-wrapper > .vl-banner > .vl-banner-color-block__container > .page-grid > .vl-banner-multi-cta__main-container > div:nth-child(5) > .vl-banner-multi-cta__image-link')
+    ...
+
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for getByAltText('')
+
+    at C:\Users\sabbavarapu.kumar\PlaywrightExample\tests\Locators\BuildInLocators1.spec.js:4:38
+```
+
+# Page snapshot
+
+```yaml
+- img
+- img
+- banner:
+  - button "Scroll to top"
+  - link "Skip to main content":
+    - /url: "#mainContent"
+  - navigation:
+    - text: Hi!
+    - link "Sign in":
+      - /url: https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&sgfl=gh&ru=https%3A%2F%2Fwww.ebay.com%2F
+    - text: or
+    - link "register":
+      - /url: https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.com%2F
+    - link "Daily Deals":
+      - /url: https://www.ebay.com/deals
+    - link "Brand Outlet":
+      - /url: https://www.ebay.com/b/Brand-Outlet/bn_7115532402
+    - link "Gift Cards":
+      - /url: https://www.ebay.com/giftcards
+    - link "Help & Contact":
+      - /url: https://www.ebay.com/help/home
+    - link "Sell":
+      - /url: https://www.ebay.com/sl/sell
+    - link "Watchlist":
+      - /url: https://www.ebay.com/mye/myebay/watchlist
+    - button "Expand Watch List"
+    - link "My eBay":
+      - /url: https://www.ebay.com/mys/home?source=GBH
+    - button "Expand My eBay"
+    - button "Expand Notifications"
+    - link "Cart":
+      - /url: https://cart.ebay.com
+    - button "Expand Cart"
+  - link "eBay Home":
+    - /url: https://www.ebay.com
+    - img "eBay Home"
+  - button "Shop by category"
+  - text: Enter your search keyword
+  - combobox "Search for anything"
+  - combobox "Select a category for search":
+    - option "All Categories" [selected]
+    - option "Antiques"
+    - option "Art"
+    - option "Baby"
+    - option "Books"
+    - option "Business & Industrial"
+    - option "Cameras & Photo"
+    - option "Cell Phones & Accessories"
+    - option "Clothing, Shoes & Accessories"
+    - option "Coins & Paper Money"
+    - option "Collectibles"
+    - option "Computers/Tablets & Networking"
+    - option "Consumer Electronics"
+    - option "Crafts"
+    - option "Dolls & Bears"
+    - option "Movies & TV"
+    - option "eBay Motors"
+    - option "Entertainment Memorabilia"
+    - option "Gift Cards & Coupons"
+    - option "Health & Beauty"
+    - option "Home & Garden"
+    - option "Jewelry & Watches"
+    - option "Music"
+    - option "Musical Instruments & Gear"
+    - option "Pet Supplies"
+    - option "Pottery & Glass"
+    - option "Real Estate"
+    - option "Specialty Services"
+    - option "Sporting Goods"
+    - option "Sports Mem, Cards & Fan Shop"
+    - option "Stamps"
+    - option "Tickets & Experiences"
+    - option "Toys & Hobbies"
+    - option "Travel"
+    - option "Video Games & Consoles"
+    - option "Everything Else"
+  - button "Search"
+  - link "Advanced":
+    - /url: https://www.ebay.com/sch/ebayadvsearch
+- main:
+  - list:
+    - listitem:
+      - link "eBay Live":
+        - /url: https://www.ebay.com/ebaylive
+    - listitem:
+      - link "Saved":
+        - /url: https://www.ebay.com/mye/myebay/saved
+    - listitem:
+      - link "Electronics":
+        - /url: https://www.ebay.com/b/Electronics/bn_7000259124
+      - 'button "Expand: Electronics"'
+    - listitem:
+      - link "Motors":
+        - /url: https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479
+      - 'button "Expand: Motors"'
+    - listitem:
+      - link "Fashion":
+        - /url: https://www.ebay.com/b/Fashion/bn_7000259856
+      - 'button "Expand: Fashion"'
+    - listitem:
+      - link "Collectibles and Art":
+        - /url: https://www.ebay.com/b/Collectibles-Art/bn_7000259855
+      - 'button "Expand: Collectibles and Art"'
+    - listitem:
+      - link "Sports":
+        - /url: https://www.ebay.com/b/Sporting-Goods/888/bn_1865031
+      - 'button "Expand: Sports"'
+    - listitem:
+      - link "Health & Beauty":
+        - /url: https://www.ebay.com/b/Health-Beauty/26395/bn_1865479
+      - 'button "Expand: Health & Beauty"'
+    - listitem:
+      - link "Industrial equipment":
+        - /url: https://www.ebay.com/b/Business-Industrial/12576/bn_1853744
+      - 'button "Expand: Industrial equipment"'
+    - listitem:
+      - link "Home & Garden":
+        - /url: https://www.ebay.com/b/Home-Garden/11700/bn_1853126
+      - 'button "Expand: Home & Garden"'
+    - listitem:
+      - link "Deals":
+        - /url: https://www.ebay.com/globaldeals
+    - listitem:
+      - link "Sell":
+        - /url: https://export.ebay.com/en/
+      - 'button "Expand: Sell"'
+  - group:
+    - button "Go to previous banner"
+    - list:
+      - listitem:
+        - link "Returns made simple":
+          - /url: https://pages.ebay.com/returns/?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A1%7Cvlpname%3Avlp_homepage
+        - text: Returns made simple Not happy with your purchase? It's easy to start a return.
+        - link "Learn more":
+          - /url: https://pages.ebay.com/returns/?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A1%7Cvlpname%3Avlp_homepage%7Cii%3Abab5d316-548d-4e5a-893d-29f4c7ff653a
+    - button "Go to next banner"
+    - button "Pause Banner Carousel"
+  - list:
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+  - heading "Explore Popular Categories" [level=2]
+  - group:
+    - list:
+      - listitem:
+        - link "Luxury":
+          - /url: https://www.ebay.com/b/Luxury-on-eBay/bn_7109710914?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A1%7Ciid%3A1%7Cli%3A8874
+          - heading "Luxury" [level=3]
+      - listitem:
+        - link "Sneakers":
+          - /url: https://www.ebay.com/b/Collectible-Sneakers/bn_7000259435?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A2%7Ciid%3A1%7Cli%3A8874
+          - heading "Sneakers" [level=3]
+      - listitem:
+        - link "P&A":
+          - /url: https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A3%7Ciid%3A1%7Cli%3A8874
+          - heading "P&A" [level=3]
+      - listitem:
+        - link "Refurbished":
+          - /url: https://br.ebay.com/b/eBay-Refurbished/bn_7040708936?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A4%7Ciid%3A1%7Cli%3A8874
+          - heading "Refurbished" [level=3]
+      - listitem:
+        - link "Trading cards":
+          - /url: https://www.ebay.com/e/row/ccgrow?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A5%7Ciid%3A1%7Cli%3A8874
+          - heading "Trading cards" [level=3]
+      - listitem:
+        - link "Pre-loved Luxury":
+          - /url: https://www.ebay.com/e/row/pre-loved-row?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A6%7Ciid%3A1%7Cli%3A8874
+          - heading "Pre-loved Luxury" [level=3]
+      - listitem:
+        - link "Toys":
+          - /url: https://www.ebay.com/b/Toys-Hobbies/220/bn_1865497?_trkparms=parentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Cpageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cc%3A7%7Ciid%3A1%7Cli%3A8874
+          - heading "Toys" [level=3]
+  - link "Get your order or your money back":
+    - /url: https://pages.ebay.com/ebay-money-back-guarantee/?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A1
+    - heading "Get your order or your money back" [level=2]
+  - text: Shop confidently with eBay Money Back Guarantee.
+  - link "Learn more":
+    - /url: https://pages.ebay.com/ebay-money-back-guarantee/?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A1
+  - link "Explore now":
+    - /url: https://www.ebay.com/globaldeals?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A5%7Cvlpname%3Avlp_homepage
+  - text: There's a deal for you, too Don't miss a chance to save on items you've been looking for.
+  - link "Explore now":
+    - /url: https://www.ebay.com/globaldeals?_trkparms=pageci%3A3aa95074-356c-11f0-89c3-4a3dd78b5a18%7Cparentrq%3Aed6b163f1960ad58a96c62e8ffffd439%7Ciid%3A5%7Cvlpname%3Avlp_homepage%7Cii%3A00e09510-94de-4c3e-8583-87d08487299e
+- contentinfo:
+  - heading "Buy" [level=3]:
+    - link "Buy":
+      - /url: https://www.ebay.com/n/all-categories
+  - list:
+    - listitem:
+      - link "Registration":
+        - /url: https://www.ebay.com/help/account/default/ebay-account?id=4188
+    - listitem:
+      - link "Bidding & buying help":
+        - /url: https://www.ebay.com/help/buying
+    - listitem:
+      - link "Stores":
+        - /url: https://www.ebay.com/b/Stores-HUB/bn_7004224522
+    - listitem:
+      - link "Creator Collections":
+        - /url: https://storefronts.ebay.com/
+    - listitem:
+      - link "eBay for Charity":
+        - /url: https://www.charity.ebay.com/
+    - listitem:
+      - link "Charity Shop":
+        - /url: https://www.ebay.com/b/Charity/bn_7114598164
+    - listitem:
+      - link "Seasonal Sales and events":
+        - /url: https://www.ebay.com/b/Sales-Events/bn_7115049177
+    - listitem:
+      - link "eBay Gift Cards":
+        - /url: https://www.ebay.com/giftcards
+  - heading "Sell" [level=3]:
+    - link "Sell":
+      - /url: https://www.ebay.com/sl/sell
+  - list:
+    - listitem:
+      - link "Start selling":
+        - /url: https://www.ebay.com/sl/sell
+    - listitem:
+      - link "How to sell":
+        - /url: https://pages.ebay.com/seller-center/get-started/selling-basics.html?utm_source=gf-learn-to-sell&utm_medium=onsite
+    - listitem:
+      - link "Business sellers":
+        - /url: https://pages.ebay.com/seller-center/listing-and-marketing/seller-hub.html
+    - listitem:
+      - link "Affiliates":
+        - /url: https://partnernetwork.ebay.com/
+  - heading "Tools & apps" [level=3]
+  - list:
+    - listitem:
+      - link "Developers":
+        - /url: https://developer.ebay.com/
+    - listitem:
+      - link "Security center":
+        - /url: https://pages.ebay.com/securitycenter/index.html
+    - listitem:
+      - link "Site map":
+        - /url: https://pages.ebay.com/sitemap.html
+  - heading "eBay companies" [level=3]
+  - link "TCGplayer":
+    - /url: https://www.tcgplayer.com/
+  - heading "Stay connected" [level=3]
+  - list:
+    - listitem:
+      - link "Facebook":
+        - /url: https://www.facebook.com/ebay/
+    - listitem:
+      - link "X (Twitter)":
+        - /url: https://twitter.com/eBay
+  - heading "About eBay" [level=3]:
+    - link "About eBay":
+      - /url: https://www.ebayinc.com/
+  - list:
+    - listitem:
+      - link "Company info":
+        - /url: https://www.ebayinc.com/company/
+    - listitem:
+      - link "News":
+        - /url: https://www.ebayinc.com/stories/news/
+    - listitem:
+      - link "Deferred Prosecution Agreement with District of Massachusetts":
+        - /url: https://www.ebayinc.com/stories/press-room/#assets-settlements
+    - listitem:
+      - link "Investors":
+        - /url: https://investors.ebayinc.com/overview/default.aspx
+    - listitem:
+      - link "Careers":
+        - /url: https://careers.ebayinc.com/
+    - listitem:
+      - link "Diversity & Inclusion":
+        - /url: https://www.ebayinc.com/company/diversity-equity-inclusion/
+    - listitem:
+      - link "Global Impact":
+        - /url: https://www.ebayinc.com/impact/
+    - listitem:
+      - link "Government relations":
+        - /url: https://www.ebaymainstreet.com/
+    - listitem:
+      - link "Advertise with us":
+        - /url: https://www.ebayads.com/
+    - listitem:
+      - link "Policies":
+        - /url: https://www.ebay.com/help/policies/default/ebays-rules-policies?id=4205
+    - listitem:
+      - link "Verified Rights Owner (VeRO) Program":
+        - /url: https://pages.ebay.com/seller-center/listing-and-marketing/verified-rights-owner-program.html#what-is-the-vero-program
+    - listitem:
+      - link "eCI Licenses":
+        - /url: https://pages.ebay.com/ebayCommerce/mtl.html
+  - heading "Help & Contact" [level=3]:
+    - link "Help & Contact":
+      - /url: https://www.ebay.com/help/home
+  - list:
+    - listitem:
+      - link "Seller Center":
+        - /url: https://pages.ebay.com/seller-center/index.html?utm_source=gf&utm_medium=onsite
+    - listitem:
+      - link "Contact Us":
+        - /url: https://www.ebay.com/help/home
+    - listitem:
+      - link "eBay Returns":
+        - /url: https://pages.ebay.com/returns/
+    - listitem:
+      - link "eBay Money Back Guarantee":
+        - /url: https://pages.ebay.com/ebay-money-back-guarantee/
+  - heading "Community" [level=3]:
+    - link "Community":
+      - /url: https://community.ebay.com/
+  - list:
+    - listitem:
+      - link "Announcements":
+        - /url: https://community.ebay.com/t5/Announcements/bg-p/Announcements
+    - listitem:
+      - link "eBay Community":
+        - /url: https://community.ebay.com/
+    - listitem:
+      - link "eBay for Business Podcast":
+        - /url: https://community.ebay.com/t5/Podcasts/ct-p/Podcasts
+  - heading "eBay Sites" [level=3]
+  - button "eBay Sites - United States - change site": United States
+  - text: Copyright © 1995-2025 eBay Inc. All Rights Reserved.
+  - link "Accessibility":
+    - /url: https://www.ebayinc.com/accessibility/
+  - text: ","
+  - link "User Agreement":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259
+  - text: ","
+  - link "Privacy":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260
+  - text: ","
+  - link "Consumer Health Data":
+    - /url: https://www.ebayinc.com/company/privacy-center/privacy-notice/consumer-health-data-privacy-policy/
+  - text: ","
+  - link "Payments Terms of Use":
+    - /url: https://pages.ebay.com/payment/2.0/terms.html
+  - text: ","
+  - link "Cookies":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/ebay-cookie-notice?id=4267
+  - text: ","
+  - link "CA Privacy Notice":
+    - /url: https://www.ebayinc.com/company/privacy-center/privacy-notice/state-privacy-disclosures/#california
+  - text: ","
+  - link "Your Privacy Choices":
+    - /url: https://www.ebay.com/adchoice/ccpa
+  - text: and
+  - link "AdChoice":
+    - /url: https://www.ebay.com/adchoice
+```
+
+# Test source
+
+```ts
+   1 | import {test,expect} from '@playwright/test'
+   2 | test('Register Ebay Website',async({page})=>{
+   3 |  await page.goto("https://www.ebay.com/");
+>  4 |  await expect(page.getByAltText('')).toBeVisible();
+     |                                      ^ Error: expect.toBeVisible: Error: strict mode violation: getByAltText('') resolved to 23 elements:
+   5 |  await page.getByText("register").click();
+   6 |  await page.getByRole("button", { name: "Personal" }).click();
+   7 |  
+   8 |  await page.getByText('Register').click();
+   9 |  await page.getByPlaceholder('First Name').fill("Hello")
+  10 |  await page.getByPlaceholder('Last Name').fill("Hi");
+  11 |  await page.getByPlaceholder('E-Mail').fill("hello@gmail.com");
+  12 |  await page.getByPlaceholder('Password').fill('ABC@123')
+  13 |  await page.getByRole("button", { name: "Continue" }).click();
+  14 |  await page.getByRole('checkbox',{name:'agree'}).click();
+  15 |
+  16 | })
+  17 | test('Login',async({page})=>{
+  18 |
+  19 | })
+```

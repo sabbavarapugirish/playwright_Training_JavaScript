@@ -1,0 +1,28 @@
+text:   Web Development
+text:   jQuery
+text:   Bootstrap
+text:   HTML
+text:   CSS
+text:   Angular
+text:   Programming Languages
+text:   Java
+text:   C#
+text:   Python
+text:   Databases
+text:   MySQL
+text:   Oracle
+text:   MS SQL Server
+text:   Web Development
+text:   jQuery
+text:   Bootstrap
+text:   HTML
+text:   CSS
+text:   Angular
+text:   Programming Languages
+text:   Java
+text:   C#
+text:   Python
+text:   Databases
+text:   MySQL
+text:   Oracle
+text:   MS SQL Server

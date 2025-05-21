@@ -1,0 +1,272 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\sabbavarapu.kumar\\PlaywrightExample\\playwright.config.js",
+    "rootDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        {
+          "printSteps": true
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "result.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "result.xml"
+        }
+      ],
+      [
+        "C:\\Users\\sabbavarapu.kumar\\PlaywrightExample\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/sabbavarapu.kumar/PlaywrightExample/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "WebTables\\webtables.spec.js",
+      "file": "WebTables/webtables.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Webtable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7709,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "---total number of rows and columns\n"
+                    },
+                    {
+                      "text": "no of columns  : Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m3079\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m3078\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "no of rows  : Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m3098\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m3078\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-05-21T05:08:15.454Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1b335bb285938ef4c61-a8097fb1520deb8ba150",
+          "file": "WebTables/webtables.spec.js",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "Webtable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30271,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sabbavarapu.kumar\\PlaywrightExample\\tests\\WebTables\\webtables.spec.js",
+                        "column": 16,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://testautomationpractice.blogspot.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m {test\u001b[33m,\u001b[39mexpect} \u001b[36mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\n \u001b[90m 2 |\u001b[39m test(\u001b[32m'Webtable'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://testautomationpractice.blogspot.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 4 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"---total number of rows and columns\"\u001b[39m)\n \u001b[90m 5 |\u001b[39m     \u001b[36mconst\u001b[39m table\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='productTable']\"\u001b[39m)\n \u001b[90m 6 |\u001b[39m     \u001b[36mconst\u001b[39m columns\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//table[@id='productTable']//th\"\u001b[39m)\u001b[0m\n\u001b[2m    at C:\\Users\\sabbavarapu.kumar\\PlaywrightExample\\tests\\WebTables\\webtables.spec.js:3:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-05-21T05:08:15.493Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-1",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sabbavarapu.kumar\\PlaywrightExample\\test-results\\WebTables-webtables-Webtable-firefox\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d1b335bb285938ef4c61-a22099fe23351990405e",
+          "file": "WebTables/webtables.spec.js",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "Webtable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4488,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "---total number of rows and columns\n"
+                    },
+                    {
+                      "text": "no of columns  : Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m3162\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m3161\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "no of rows  : Promise {\n  \u001b[36m<pending>\u001b[39m,\n  [\u001b[32mSymbol(async_id_symbol)\u001b[39m]: \u001b[33m3181\u001b[39m,\n  [\u001b[32mSymbol(trigger_async_id_symbol)\u001b[39m]: \u001b[33m3161\u001b[39m,\n  [\u001b[32mSymbol(kResourceStore)\u001b[39m]: \u001b[90mundefined\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-05-21T05:08:15.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1b335bb285938ef4c61-4313a49eeea5b5f39ead",
+          "file": "WebTables/webtables.spec.js",
+          "line": 2,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-05-21T05:08:11.618Z",
+    "duration": 37817.589,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

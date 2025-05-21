@@ -1,0 +1,73 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="37.817589">
+<testsuite name="WebTables\webtables.spec.js" timestamp="2025-05-21T05:08:12.393Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.709" errors="0">
+<testcase name="Webtable" classname="WebTables\webtables.spec.js" time="7.709">
+<system-out>
+<![CDATA[---total number of rows and columns
+no of columns  : Promise {
+  [36m<pending>[39m,
+  [[32mSymbol(async_id_symbol)[39m]: [33m3079[39m,
+  [[32mSymbol(trigger_async_id_symbol)[39m]: [33m3078[39m,
+  [[32mSymbol(kResourceStore)[39m]: [90mundefined[39m
+}
+no of rows  : Promise {
+  [36m<pending>[39m,
+  [[32mSymbol(async_id_symbol)[39m]: [33m3098[39m,
+  [[32mSymbol(trigger_async_id_symbol)[39m]: [33m3078[39m,
+  [[32mSymbol(kResourceStore)[39m]: [90mundefined[39m
+}
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="WebTables\webtables.spec.js" timestamp="2025-05-21T05:08:12.393Z" hostname="firefox" tests="1" failures="1" skipped="0" time="30.271" errors="0">
+<testcase name="Webtable" classname="WebTables\webtables.spec.js" time="30.271">
+<failure message="webtables.spec.js:2:5 Webtable" type="FAILURE">
+<![CDATA[  [firefox] › WebTables\webtables.spec.js:2:5 › Webtable ───────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "https://testautomationpractice.blogspot.com/", waiting until "load"
+
+
+      1 | import {test,expect} from '@playwright/test'
+      2 | test('Webtable',async({page})=>{
+    > 3 |     await page.goto("https://testautomationpractice.blogspot.com/");
+        |                ^
+      4 |     console.log("---total number of rows and columns")
+      5 |     const table=await page.locator("//table[@id='productTable']")
+      6 |     const columns=await page.locator("//table[@id='productTable']//th")
+        at C:\Users\sabbavarapu.kumar\PlaywrightExample\tests\WebTables\webtables.spec.js:3:16
+
+    Error Context: ..\test-results\WebTables-webtables-Webtable-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\WebTables-webtables-Webtable-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="WebTables\webtables.spec.js" timestamp="2025-05-21T05:08:12.393Z" hostname="webkit" tests="1" failures="0" skipped="0" time="4.488" errors="0">
+<testcase name="Webtable" classname="WebTables\webtables.spec.js" time="4.488">
+<system-out>
+<![CDATA[---total number of rows and columns
+no of columns  : Promise {
+  [36m<pending>[39m,
+  [[32mSymbol(async_id_symbol)[39m]: [33m3162[39m,
+  [[32mSymbol(trigger_async_id_symbol)[39m]: [33m3161[39m,
+  [[32mSymbol(kResourceStore)[39m]: [90mundefined[39m
+}
+no of rows  : Promise {
+  [36m<pending>[39m,
+  [[32mSymbol(async_id_symbol)[39m]: [33m3181[39m,
+  [[32mSymbol(trigger_async_id_symbol)[39m]: [33m3161[39m,
+  [[32mSymbol(kResourceStore)[39m]: [90mundefined[39m
+}
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

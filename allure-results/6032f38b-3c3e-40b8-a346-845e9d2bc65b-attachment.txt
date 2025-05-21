@@ -1,0 +1,13 @@
+---total number of rows and columns
+no of columns  : Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 3079,
+  [Symbol(trigger_async_id_symbol)]: 3078,
+  [Symbol(kResourceStore)]: undefined
+}
+no of rows  : Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 3098,
+  [Symbol(trigger_async_id_symbol)]: 3078,
+  [Symbol(kResourceStore)]: undefined
+}
